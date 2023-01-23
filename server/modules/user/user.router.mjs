@@ -29,7 +29,7 @@ router.post("/", raw( async (req, res) => {
 
 
 // GET ALL USERS
-router.get( "/users",raw(async (req, res) => {
+router.get( "/",raw(async (req, res) => {
     const users = await user_model.select(`id
                                           first_name 
                                           last_name
